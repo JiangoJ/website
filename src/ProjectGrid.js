@@ -71,9 +71,9 @@ function ProjectGrid(){
       <div className="card-grid center-div" style={{position:"absolute"}}>
         {trail.map(({height,f,r, opacity, x, ...rest }, i) => (
           
-          <div class="card-container">
+          <div className="card-container">
           {cards.map(({ z, opacity }, index) => (
-          
+        
             <animated.div
             onClick={() => cardClick(i)}
             onMouseEnter={() => hoverCard(i)} 
