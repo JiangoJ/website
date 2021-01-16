@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "azonix";
+  src: local("MyFont"), url(../fonts//Azonix.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "lemonmilk";
+  src: local("MyFont"), url(../fonts//LEMONMILK-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "ubuntumed";
+  src: local("MyFont"), url(../fonts/ubuntumed.ttf) format("truetype");
+}
+
+.wrapper h1 {
+  font-family: lemonmilk;
+  color: white;
+  text-align: center;
+
+  /* I think this works for centering? */
+  /* top: calc(10% - 5px); */
+  /* -webkit-transform: translate(-50%, calc(-50% - 64px)); */
+  /* -ms-transform: translate(-50%, calc(-50% - 64px)); */
+  /* transform: translate(-50%, calc(-50% - 64px)); */
+  transform: translate(50px, -300px);
+}
+
+.wrapper h1 span {
+  position: absolute;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  color: white;
+  margin-left: 10%;
+  font-family: ubuntumed;
+  text-align: left;
+}
+
+.about-text-nomargin {
+  color: white;
+  font-family: ubuntumed;
+  text-align: left;
+}
+
+.about-text-title {
+  font-size: 4em;
+  display: inline-flex;
+}
+
+.about-text-body {
+  white-space: pre;
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+.stripped-link {
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  background-color: none;
+  text-decoration: none;
+}
+
+.stripped-link:hover {
+  color: white;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.project-card-box {
+  width: 95%;
+  margin-left: 5%;
+  height: 20vmax;
+  border: 5px solid white;
+}
+
+.project-section {
+  min-height: 150vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 350px;
+  perspective-origin: 50% 50%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card-container {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  transform-style: flat;
+}
+
+.card-container > div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.project-text {
+  font-family: ubuntumed;
+}
+
+.project-title {
+  margin-top: 5%;
+  background: white;
+  color: black;
+  font-size: 2em;
+}
+
+.project-desc {
+  margin-top: 5%;
+  color: white;
+  font-size: 1.5em;
+}
