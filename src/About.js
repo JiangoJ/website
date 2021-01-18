@@ -46,7 +46,7 @@ class About extends React.Component{
                 <a className="stripped-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-jiango/">
                  <AiFillLinkedin className="icons" size="4em"></AiFillLinkedin>
                 </a>
-                <a className="stripped-link" target="_blank" rel="noopener noreferrer" href="jjj65@cornell.edu">
+                <a className="stripped-link" href={"mailto:" + "jjj65@cornell.edu"}>
                  <AiFillMail className="icons" size="4em"></AiFillMail>
                 </a>
               </Col>
