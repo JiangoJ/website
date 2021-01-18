@@ -19,7 +19,7 @@ class App extends React.Component {
         <div className="app-section app-section-text">
           <About></About>
         </div>
-        <div className="app-section">
+        <div className="img-section">
           <img className="align-right img-responsive" alt="Logo" src={me}></img>
         </div>
         <div className="app-section project-section">
